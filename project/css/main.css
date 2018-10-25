@@ -556,27 +556,20 @@ a:hover {
   color: #40d39b;
 }
 
-/*.header_nav_after:after{
-   content: '';
-   display:inline-block;
-   width: 1px;
-   height: 1px;
-   border:1px solid #4d4959; 
-   border-radius: 3px;
-   background:#4d4959;
-   margin-left:18px;
+.header_nav a:nth-child(4) {
+  margin: 0;
 }
-*/
+
 /* ------------section_one -------------*/
 .section_one {
   background-color: #f7f7f7;
   height: auto;
+  padding: 120px 0 120px 0;
 }
 
 .section_one_icon {
   display: block;
   margin: 0 auto;
-  padding-top: 120px;
   padding-bottom: 30px;
 }
 
@@ -602,7 +595,7 @@ h2 {
   text-align: center;
   line-height: 2em;
   /*расстояния между строчками*/
-  padding: 30px 20px 120px 20px;
+  padding: 30px 20px 0 20px;
   margin: 0 auto;
 }
 
@@ -637,12 +630,14 @@ h2 {
 
 .section_little {
   height: 67%;
+  padding-top: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .section_icon {
   display: block;
   margin: 0 auto;
-  padding-top: 120px;
   padding-bottom: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -750,6 +745,10 @@ h2 {
   background-color: #f7f7f7;
   height: 59vh;
   min-height: 470px;
+  padding-bottom: 10px;
+  padding-top: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main .item:first-child {
@@ -887,6 +886,8 @@ main .item:first-child {
 
 .section_seven-input {
   width: 400px;
+  padding-left: 8px;
+  padding-right: 8px;
   height: 70px;
   margin-right: 8px;
   -webkit-box-sizing: border-box;
@@ -980,7 +981,7 @@ footer div:nth-child(2) {
 **********************/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1450px) {
-  .section_icon {
+  .section_little {
     padding-top: 50px;
   }
   .section_p {
@@ -991,11 +992,8 @@ footer div:nth-child(2) {
   .section_little-two, .section_little-three {
     height: 650px;
   }
-  img.section_one_icon {
-    padding-top: 80px;
-  }
   main.section_five {
-    min-height: 410px;
+    padding-top: 50px;
   }
 }
 
@@ -1029,8 +1027,11 @@ footer div:nth-child(2) {
   .section_little-two {
     width: 50%;
   }
-  .section _six {
+  .section_six {
     min-height: 450px;
+  }
+  main.section_five {
+    padding-top: 30px;
   }
 }
 
