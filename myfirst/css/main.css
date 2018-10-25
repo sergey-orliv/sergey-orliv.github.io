@@ -517,6 +517,7 @@ header {
           background-size: cover;
   background-position: 50% 50%;
   height: 100vh;
+  min-height: 700px;
   padding-top: 35px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -569,6 +570,7 @@ a:hover {
 /* ------------section_one -------------*/
 .section_one {
   background-color: #f7f7f7;
+  height: auto;
 }
 
 .section_one_icon {
@@ -598,10 +600,10 @@ h2 {
   word-spacing: 0.1em;
   /*расстяния между словами*/
   text-align: center;
-  margin: 0 auto;
   line-height: 2em;
   /*расстояния между строчками*/
   padding: 30px 20px 120px 20px;
+  margin: 0 auto;
 }
 
 /* ------------section_two -------------*/
@@ -624,12 +626,12 @@ h2 {
 }
 
 .big {
-  height: 76vh;
+  height: 750px;
   width: 67%;
 }
 
 .little {
-  height: 76vh;
+  height: 750px;
   width: 33%;
 }
 
@@ -685,7 +687,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   background: #848789;
-  width: 50px;
+  width: 90px;
   height: 1px;
   margin: 20px auto;
 }
@@ -715,12 +717,12 @@ h2 {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: 50% 50%;
-  height: 76vh;
+  height: 750px;
   width: 33%;
 }
 
 .section_little-two {
-  height: 76vh;
+  height: 750px;
   width: 34%;
 }
 
@@ -730,7 +732,7 @@ h2 {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: 50% 50%;
-  height: 76vh;
+  height: 750px;
   width: 33%;
 }
 
@@ -747,6 +749,7 @@ h2 {
 .section_five {
   background-color: #f7f7f7;
   height: 59vh;
+  min-height: 470px;
 }
 
 main .item:first-child {
@@ -756,6 +759,7 @@ main .item:first-child {
 /* ------------section_six -------------*/
 .section_six {
   height: 66vh;
+  min-height: 550px;
 }
 
 .section_six-one {
@@ -836,6 +840,7 @@ main .item:first-child {
 /* ------------section_seven -------------*/
 .section_seven {
   height: 25vh;
+  min-height: 130px;
   background-color: #282f35;
 }
 
@@ -861,6 +866,7 @@ main .item:first-child {
 /* ------------section_eight -------------*/
 .section_eight {
   height: 59vh;
+  min-height: 350px;
 }
 
 .section_eight img {
@@ -916,6 +922,7 @@ input::-webkit-input-placeholder {
 /* ------------section_nine -------------*/
 footer {
   height: 32vh;
+  min-height: 150px;
   background-color: #f7f7f7;
 }
 
@@ -974,7 +981,18 @@ footer div:nth-child(2) {
     padding-top: 50px;
   }
   .section_p {
-    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .big, .little, .section_little-one,
+  .section_little-two, .section_little-three {
+    height: 650px;
+  }
+  img.section_one_icon {
+    padding-top: 80px;
+  }
+  main.section_five {
+    min-height: 410px;
   }
 }
 
@@ -984,6 +1002,13 @@ footer div:nth-child(2) {
     max-width: 880px;
   }
   .section_two_little-img, .section_three_little-img, .section_four_little-img {
+    display: none;
+  }
+  .section_little-one,
+  .section_little-two {
+    height: 450px;
+  }
+  .section_little-three {
     display: none;
   }
   .big {
@@ -1001,6 +1026,9 @@ footer div:nth-child(2) {
   .section_little-two {
     width: 50%;
   }
+  .section _six {
+    min-height: 450px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -1017,7 +1045,7 @@ footer div:nth-child(2) {
     display: none;
   }
   .section_little-one, .section_little-two {
-    height: 50vh;
+    height: 480px;
   }
   .section_six-one {
     display: none;
@@ -1042,6 +1070,9 @@ footer div:nth-child(2) {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 695px) {
+  .section_two_big, .section_three_big {
+    height: 400px;
+  }
   .section_six-two, .section_six-one {
     display: none;
   }
@@ -1051,8 +1082,8 @@ footer div:nth-child(2) {
   header {
     height: 50vh;
   }
-  .big {
-    height: 50vh;
+  .section_little-one, .section_little-two, header {
+    height: 480px;
   }
   .section_six-three {
     width: 100%;
@@ -1066,15 +1097,24 @@ footer div:nth-child(2) {
   .section_seven-input {
     width: 300px;
   }
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
   .section_little-one {
     display: none;
   }
   .section_little-two {
     width: 100%;
+  }
+  .section_eight-compound {
+    width: 440px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .section_eight-compound {
+    width: 390px;
+  }
+  .section_seven-input {
+    width: 250px;
   }
   footer div:nth-child(1) {
     text-align: center;
