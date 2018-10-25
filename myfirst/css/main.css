@@ -547,7 +547,7 @@ header {
 
 header a {
   color: #4d4959;
-  margin: 0 48px;
+  padding: 0 48px;
   word-spacing: 1em;
   letter-spacing: 0.2em;
 }
@@ -556,8 +556,8 @@ a:hover {
   color: #40d39b;
 }
 
-.header_nav a:nth-child(4) {
-  margin: 0;
+header a:nth-child(4) {
+  padding: 0;
 }
 
 /* ------------section_one -------------*/
@@ -736,7 +736,7 @@ h2 {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: 0% 50%;
+  background-position: 50% 50%;
   height: 33%;
 }
 
