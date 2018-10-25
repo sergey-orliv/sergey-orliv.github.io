@@ -26,21 +26,21 @@
    <body>
       <header>
          <nav class="header_nav">
-           <a href="#">about us</a>
+           <a href="#about">about us</a>
            <span>.</span>
-           <a href="#">work</a>
+           <a href="#work">work</a>
            <img src="img/Logo.png"alt="Logo">
-           <a href="#">shop</a>
+           <a href="#shop">shop</a>
            <span>.</span>
-           <a href="#">contact</a>
+           <a href="#contact">contact</a>
          </nav>
       </header>
-      <section class="section_one">
+      <section class="section_one" id="about">
         <img src="img/Icon.png" alt="лог" class="section_one_icon">
          <h2>A NEW GENERATION OF VINTAGE BIKE</h2>
          <p class="section_one_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
       </section>
-      <section class="section_two flex">
+      <section class="section_two flex" id="work">
          <div class="section_two_big big flex">
             <img src="img/Logo2.png" alt="лог">
          </div>
@@ -91,25 +91,21 @@
              <blockquote class="twitter-tweet" data-lang="ru"><p lang="en" dir="ltr">Lovin the love, thanks Skinman!… <a href="https://t.co/GeFaLYX8qt">https://t.co/GeFaLYX8qt</a></p>&mdash; Velo Bike Shop (@VeloBikeShop) <a href="https://twitter.com/VeloBikeShop/status/1005492798014058496?ref_src=twsrc%5Etfw">9 июня 2018 г.</a></blockquote>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
          </div>
-         
          <div class="item">
              <blockquote class="twitter-tweet" data-lang="ru"><p lang="en" dir="ltr">Woah! Look at this mint 18” Raleigh Seneca Mountain Tour. It’s currently on sale for $225.00.  Stop on by and build up a vintage touring bike with this beautiful base.</p>&mdash; Velo Bike Shop (@VeloBikeShop) <a href="https://twitter.com/VeloBikeShop/status/970392225103347718?ref_src=twsrc%5Etfw">4 марта 2018 г.</a></blockquote>
              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
          </div>
-         
          <div class="item">
              <blockquote class="twitter-tweet" data-lang="ru"><p lang="en" dir="ltr">Isn&#39;t this weather amazing? Stop on in for all your quick last minute needs before those big afternoon rides</p>&mdash; Velo Bike Shop (@VeloBikeShop) <a href="https://twitter.com/VeloBikeShop/status/969278887237533696?ref_src=twsrc%5Etfw">1 марта 2018 г.</a></blockquote>
              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
          </div>
-         
          <div class="item">
              <blockquote class="twitter-tweet" data-lang="ru"><p lang="en" dir="ltr">Isn&#39;t this weather amazing? Stop on in for all your quick last minute needs before those big afternoon rides</p>&mdash; Velo Bike Shop (@VeloBikeShop) <a href="https://twitter.com/VeloBikeShop/status/969278887237533696?ref_src=twsrc%5Etfw">1 марта 2018 г.</a></blockquote>
              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
          </div>
-   
       </div>
       </main>
-      <section class="section_six flex"> 
+      <section class="section_six flex" id="shop"> 
         <div class="section_six-one">
             <div class="section_six-one-little">
             </div>
@@ -128,13 +124,11 @@
             <div class="section_six-three-little">
             </div>
         </div>
-         
       </section>
       <section class="section_seven flex">
          <a class="button" href="#">DISCOVER THE SHOP</a>
       </section>
       <section class="section_eight flex">
-        
          <div> 
             <img src="img/Logo.png" alt="лог">
             <p>Stay on the saddle!</p>
@@ -144,10 +138,8 @@
                <input class="section_seven-button" type="submit" value="GO">
             </div>
          </div> 
-         
       </section>
-      
-      <footer class="footer_div">
+      <footer class="footer_div" id="contact">
             <div>
               <p><span>AOD New York</span></p>
               <p>2250 Lexington Avenue</p>
@@ -162,7 +154,6 @@
                <p>Handcrafted by</p>
                <img src="img/logo8.png">
             </div>
-         
    </footer>
    <script type="text/javascript" src="js/jquery.min.js">
    </script>
@@ -187,6 +178,15 @@
     }
 })
 }); 
+   </script>
+   <script type="text/javascript">
+      var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+});
    </script>
   </body>
 </html>

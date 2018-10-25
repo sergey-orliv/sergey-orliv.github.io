@@ -811,6 +811,9 @@ main .item:first-child {
 
 .section_six-three-big:hover {
   background-image: url("../img/img06.41.jpg");
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .section_six-three-little {
