@@ -543,6 +543,18 @@ header {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: bold;
+  height: 120px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+#top_nav {
+  top: 20px;
+  /*высота шапки в пикселях*/
+  background: rgba(243, 244, 255, 0.9);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 header a {
@@ -871,9 +883,10 @@ main .item:first-child {
   min-height: 350px;
 }
 
-.section_eight img {
+.section_eight a {
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
 
 .section_eight p {
@@ -983,6 +996,7 @@ footer div:nth-child(2) {
 @media only screen and (max-width: 1450px) {
   .section_little {
     padding-top: 50px;
+    padding-bottom: 30px;
   }
   .section_p {
     padding-left: 20px;
@@ -1070,6 +1084,13 @@ footer div:nth-child(2) {
   .section_one_icon {
     padding-top: 35px;
   }
+  .section.section_three.flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -1086,8 +1107,11 @@ footer div:nth-child(2) {
   header {
     height: 50vh;
   }
-  .section_little-one, .section_little-two, header {
+  header {
     height: 480px;
+  }
+  .section_little-one, .section_little-two {
+    height: auto;
   }
   .section_six-three {
     width: 100%;
@@ -1096,7 +1120,7 @@ footer div:nth-child(2) {
     display: none;
   }
   header a {
-    margin: 20px 20px;
+    padding: 20px 20px;
   }
   .section_seven-input {
     width: 300px;
