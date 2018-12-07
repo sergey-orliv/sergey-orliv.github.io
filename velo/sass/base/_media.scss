@@ -1,0 +1,268 @@
+/**********************
+* MEDIA
+**********************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1450px) {
+   .section_little{
+   padding-top: 50px; 
+   padding-bottom: 30px;
+   }
+   .section_p{
+      padding-left:20px;
+      padding-right:20px;
+   }
+   .big, .little, .section_little-one,
+   .section_little-two, .section_little-three,{
+      height: 650px;
+   }
+   main.section_five {
+    padding-top:50px;
+   }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1050px) {
+    .section_p{
+      max-width: 880px;
+   }
+   .section_two_little-img, .section_three_little-img, .section_four_little-img {
+    display: none;
+    }
+   .section_little-one,
+   .section_little-two,{
+      height: 450px;
+   }
+   .section_little-three{
+      display: none;
+   }
+   .big{
+      width: 100%
+   }
+   .little{
+      height:auto;
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   .section_little-one.flex {
+    width: 50%;
+   }
+   .section_little-two {
+    width: 50%;
+   }
+   .section_six{
+    min-height: 450px;
+   }
+   main.section_five {
+    padding-top:30px;
+   }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 950px) {
+   .section_one_p{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+   .section_one{
+      padding-left:20px;
+      padding-right:20px;
+   }
+   
+   main.section_five {
+    height: auto;
+    padding-bottom: 20px;
+   }
+   header img{
+      display: none;
+   }
+   .section_little-one, .section_little-two {
+      height: 480px;
+   }
+   .section_six-one {
+    display: none;
+   }
+   .section_six-two {
+    width: 50%;
+   }
+   .section_six-three {
+    width: 50%;
+   }
+   .section_little-three {
+    display: none;
+   }
+   .section_four .section_p{
+      padding-left:20px;
+      padding-right:20px;
+   }
+   .section_one_icon {
+    padding-top: 35px;
+   }
+   .section.section_three.flex {
+    flex-direction: column-reverse;
+   }
+   nav {
+    height: 80px;
+   }
+   .scroll {
+      height: 45px;
+   }
+   .section_three .little .section_little{
+      padding-top:0;
+   }
+   .section_one_p{
+      text-align: justify;
+   }
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 695px) {   .section_two_big, .section_three_big  {
+    height: 400px;
+}
+   .section_six-two, .section_six-one {
+    display: none;
+   }
+   .section_six-one{
+      width: 100%;
+   }
+   header{
+      height: 50vh;
+   }
+   header {
+     height: 480px;
+   }
+   .section_little-one, .section_little-two{
+      height: auto;
+   }
+  
+   .section_six-three {
+      width: 100%;}
+    header span{
+      display: none;
+   }
+   header a{
+      padding: 20px 20px;
+   }  
+   .section_seven-input {
+    width: 300px;
+   }
+   .section_little-one {
+   display: none;
+   }
+   .section_little-two {
+   width: 100%;
+   }
+   .section_eight-compound {
+    width: 440px;
+   }
+   .section_one{
+      padding:40px 30px;
+   }
+   .section_one_p{
+      padding-left: 0;
+      padding-right: 0;
+   }
+   main.section_five {
+    padding:0;
+   }
+   footer div p{
+      text-align:center;
+   }
+   p.section_p.after{
+      padding-left: 0;
+      padding-right: 0;
+   }
+   .section_little-two,    .little {
+      padding-left: 30px;
+      padding-right: 30px;
+   }
+   main .item:first-child {
+    padding-right: 30px;
+   }
+   header {
+    height: 320px;
+   }
+   .section_two_big, .section_three_big {
+    height: 320px;
+   }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+   .section_seven-input {
+    width: 250px;
+   }
+   .section_seven-button{
+      padding:0;
+      margin:0;
+   }
+   .section_eight-compound {
+      width: auto;
+      margin: 0 15px;
+      display: flex;
+      flex-direction:row;  
+      flex-wrap: nowrap;
+      justify-content:center;
+   }
+   .section_one_p{
+      font-size: 16px;
+   }
+   nav a{
+      font-size:12px;
+      word-spacing: 0.2em;  
+      padding: 20px 10px;
+   }
+   nav {
+    height: 65px;
+   }
+}
+   
+@media only screen and (max-width : 380px){
+   .section_seven-input {
+    width: 220px;
+   }
+   nav a{
+      font-size:10px;
+   }
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--*/
