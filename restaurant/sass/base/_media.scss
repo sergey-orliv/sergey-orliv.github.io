@@ -1,0 +1,288 @@
+/**********************
+* MEDIA
+**********************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px) {
+   .header_main {
+      padding-top: 50px;
+   }
+   header {
+      min-height: 700px;
+   }
+   .section_reserv_main{
+    width: 520px;
+    padding: 0px 50px;
+   }
+   .section_abaut_main {
+    width: 85%;
+   }
+   .section_abaut_colom1 {
+    width: 520px;
+   }
+   footer div {
+      width: 340px;
+      padding: 0 10px;
+   }
+   #popup_greek_salad {
+    height: 500px;
+      margin-top: -250px;}
+   #popup_greek_salad .greek_salad {
+    height: 300px;
+      width: auto;
+   }
+   header ul li {
+      margin-right: 0;
+   }
+   .section_igredients {
+    padding: 70px 90px;
+   }
+   .section_igredients_main {
+    width: 520px;
+    padding: 40px 50px;
+   }
+}
+@media only screen and (max-width : 1200px) {
+   header {
+      height: auto;
+   }
+   header h1 {
+    font-size: 75px;
+   }
+   nav a {
+      font-size: 16px;
+   }
+   .header_button a {
+    font-size: 15px;
+   }
+   .section_abaut_main {
+    width: auto;
+   }
+   .section_abaut_colom1 {
+    width: 400px;
+    padding:40px 20px;
+   }
+   .section_abaut_colom2 {
+    width: 50%;
+   }
+   .section_abaut_main{
+   flex-direction:row; 
+   flex-wrap:wrap;
+   justify-content:center;
+   }
+   .section_igredients {
+    padding: 50px 70px;
+   }
+   .section_igredients_main {
+    width: 480px;
+    padding: 30px 40px;
+   }
+   .section_menu_colom1, .section_menu_colom2 {
+    width: 480px;
+      padding: 0 20px;
+   }
+   h6 {
+    line-height: 30px;
+    padding-bottom: 30px;
+   }
+   .section_reviews_main {
+    width: 700px;
+    padding: 40px 40px 50px 40px;
+   }
+   .section_reserv_img .none{
+      display: none;
+   }
+   .section_reserv_img img {
+    width: 100%;
+   }
+   footer div {
+    width: 280px;
+    padding: 0 10px;
+   }
+   #popup_greek_salad {
+      height:auto;
+      width: 400px;
+   }
+   #popup_greek_salad .greek_salad {
+    height: 260px;
+    width: auto;
+   }
+   #popup_spesial_pastitsio{
+      height:auto;
+      width: 400px;
+   }
+   
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+   header{
+      min-height: 500px;
+   }
+   header img {
+      display: none;
+   }
+   header h1 {
+      font-size: 55px;
+   }
+   .header_main {
+    padding-top: 80px;
+   }
+   nav{
+      float:none;
+      margin: 0 auto;
+   }
+   nav a{
+      padding-top:20px;
+   }
+   .header_button a{
+      width: auto;
+      font-size: 14px;
+   }
+   .section_abaut_colom2{
+      display: none;
+   }
+   .section_igredients {
+    padding: 30px 40px;
+   }
+   .section_igredients_main p {
+    margin-bottom: 30px;
+   }
+   #popup_spesial_pastitsio .pastitsio {
+    width: 300px;
+   }
+   #popup_greek_salad .greek_salad {
+    height: 200px;
+   }
+   .section_reviews {
+      padding:40px 20px;
+   }
+   .section_reserv_img{
+      display: none;
+   }
+   .section_reserv {
+    padding: 50px 20px;
+   }
+   footer {
+    padding: 40px 20px 40px 20px;
+   }
+   footer div {
+    width: 230px;
+   }
+   
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+   .section_reviews_main {
+    width: 90%;
+    padding: 30px 20px 40px 20px;
+   }
+   .header_button a {
+    font-size: 12px;
+    padding: 10px 15px;
+   }
+   header h1 {
+    font-size: 45px;
+   }
+   header {
+    min-height: 400px;
+   }
+   header ul li {
+    margin-left: 10px;
+   }
+   nav a {
+    font-size: 12px;
+   }
+   .section_igredients {
+    padding: 30px 0;
+   }
+   .section_igredients_main {
+      float:none;
+      margin: 0 auto;
+    width: 80%;
+    padding: 30px 40px;
+   }
+   .section_reviews_img {
+    display: none;
+   }
+   h6 {
+    font-size: 20px;
+   }
+   form{
+      width: 200px;
+      margin: 0 auto;
+   }
+   footer{
+      justify-content: center;
+   }
+   footer div{
+      padding-bottom:35px;
+      width: 350px;
+   }
+   footer img{
+      width: 150px;
+      padding:0;
+   }
+
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 500px) {
+   .social{
+      display: none;
+   }
+   nav{
+      width: 340px;
+   }
+   header {
+    min-height: 100vh;
+   }
+   .header_main {
+    padding-top:40%;   
+   }
+   .header_main {
+    width: 85%;
+   }
+   .header_button a {
+      margin-bottom:7%;
+   }
+   .section_igredients_main img{
+      display: none;
+   }
+   h3 {
+    font-size: 30px;
+   }
+   .section_igredients_main p {
+    margin-top: 30px;
+   }
+   .section_reserv_main {
+    padding: 0px 20px;
+   }
+   footer div{
+      width: 80%;
+   }
+   .spesial span{
+      display:none;
+   }
+   .spesial::after {display: none;}
+   .section_menu_colom2 {
+    padding: 0 30px;
+   }
+}
+@media only screen and (max-width : 374px) {
+   nav{
+      width:auto;
+   }
+   nav a {
+    font-size: 10px;
+   }
+   header ul li {
+    margin-left: 8px;
+   }
+   .header_main {
+    padding-top:25%;   
+   }
+}
