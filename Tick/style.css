@@ -1,0 +1,95 @@
+*{
+   font-family: 'Bungee', cursive;
+}
+body{
+   background-color: #f0f0f0;
+   height:100%;
+}
+main{
+   width: 300px;
+   height:300px;   
+   background-color: #a23fff;
+   margin:10% auto 5% auto;
+   border: 5px solid #10176c;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   cursor: pointer;
+}
+main div{
+   width: 100px;
+   height:100px;
+   border:3px solid #ffffff;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+}
+.ix{
+   background-image: url(times-solid.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: #30cebc;
+}
+.nol{
+   background-image: url(211.png);  
+   background-repeat: repeat-y;
+   background-size: cover;
+   background-position: center;
+   background-color: #fdeb27;
+}
+.button_restart{
+   display:inline-block;
+   color:#fff;
+   font-size:20px;
+   padding:2px 15px;
+   background-color: #a23fff;
+   border:3px solid #fff;
+   -webkit-transition: 0.3s;
+   -o-transition: 0.3s;
+   transition: 0.3s;
+}
+#button{
+   padding:5px;
+   background-color: #10176c;
+   display:inline-block;
+   margin-left:50%;
+   -webkit-transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+           transform: translateX(-50%);
+   cursor: pointer;
+}
+.hover{
+   background-color: #fc41d0;
+   color:#000;
+}
+.win{
+   background-color:#fc41d0;
+   -webkit-animation-name: win;
+           animation-name: win;
+   -webkit-animation-duration: 2s;
+           animation-duration: 2s;
+   -webkit-animation-iteration-count:infinite;
+           animation-iteration-count:infinite;
+}
+@-webkit-keyframes win{
+   0% {
+      background-color:#fc41d0;
+   }
+   50% {
+      background-color:#dddddd;
+   }
+}
+@keyframes win{
+   0% {
+      background-color:#fc41d0;
+   }
+   50% {
+      background-color:#dddddd;
+   }
+}
+
