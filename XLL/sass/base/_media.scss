@@ -1,0 +1,159 @@
+/**********************
+* MEDIA
+**********************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px) {
+	.helps_container div{
+		max-width: 360px;
+	}
+	.footer_container{
+		justify-content: center;
+	}
+	section.helps {
+      padding: 40px 0;
+	}
+	footer {
+      padding: 30px 0;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.nav_container .nav_logo{
+		display: none;
+	} 
+	.nav_container .crome{
+		display: none;
+	}
+	.nav_container .nav_you{
+		margin-top:20px;
+	}
+	.nav_container{
+		padding: 0 20px 0 0;
+	}
+	.nav_container .nav_info{
+		padding-right: 20px;
+	}
+	.item2 img, .slaider_div_items{
+		display:none !important;
+	}
+	div.item2 p{
+		display:none;
+	}
+	div.item2 h3{
+		padding-top: 225px;
+	}
+	div.item2 a{
+		margin-top:80px;
+	}
+
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	section.cabinet input{
+		width: 80%;
+	}
+	.cabinet_section div{
+		width: 450px;
+	}   
+	.owl-nav .owl-next {
+      right: 1px !important;
+	}
+	.owl-nav .owl-prev {
+    left: 1px !important;
+	}
+	.shop_info{
+		flex-direction: column;
+	}
+	.shop_info .shop_info_button{
+		position:static;
+	}
+	.shop_info div img{
+		position:relative;
+		top:25px;
+	}
+}
+@media only screen and (max-width : 650px) {
+	.cabinet_section div{
+		width: 350px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 590px) {
+	.nav_container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.nav_container .nav_info{
+		display: none;
+	}
+	.nav_container .nav_you{
+		display: inline-block;
+		float: none;
+	}
+	h1 {
+    font-size: 35px;
+	}
+	h2 {
+    font-size: 30px;
+	}
+	.main_popup{
+		max-width: 320px;
+	}
+	.main_popup .popup_nav p {
+    padding: 0 5px;
+	}
+	.main_popup form input{
+		width: 280px;
+	}
+	nav.questions_nav{
+		height: auto;
+		padding-bottom:10px;
+	}
+	.cabinet_section div{
+		width: 100%;
+	}
+	section.cabinet span{
+		margin: 10px auto 5px auto;
+	}
+	.cabinet_nav p {
+		padding-top:10px;
+	}
+	section.cabinet {
+    padding-top:15px;
+	}
+	section.apps {
+    padding: 40px 15px 30px 15px;
+	}
+	.questions_form form input{
+		width: 100%;
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	section.questions, section.agree{
+		margin-bottom:0;
+	}
+	section.recom{
+		margin-bottom:0;
+		padding: 40px 20px
+	}
+	.questions_form {
+    margin: 30px auto 30px auto;
+	}
+	.shop_info div img{
+		display: none;
+	}
+	.shop_info p{
+		padding-bottom:10px;
+	}
+	.shop_info_button{
+		margin-top:10px;
+	}
+	
+}
