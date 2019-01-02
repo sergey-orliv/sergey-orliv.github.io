@@ -601,6 +601,58 @@ body {
   font-family: 'Conv_GraphikLightCyGrWeb';
 }
 
+/*-----------------preloader-----------------------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+  display: block;
+  background: #efefef;
+}
+
+.page-loader-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid;
+  border-top-color: #000000;
+  border-bottom-color: rgba(0, 0, 0, 0.28);
+  border-left-color: #000000;
+  border-right-color: rgba(0, 0, 0, 0.28);
+  -webkit-animation: page-loader-circle 0.8s linear infinite;
+  animation: page-loader-circle 0.8s linear infinite;
+}
+
+@-webkit-keyframes page-loader-circle {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes page-loader-circle {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 /*-------------------nav-------------------------*/
 nav {
   width: 100%;

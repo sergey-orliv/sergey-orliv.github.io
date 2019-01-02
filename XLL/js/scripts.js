@@ -1,5 +1,10 @@
 $(document).ready(function(){
 	$('body').append('<a href="#" id="go-top" title="Вверх"><i class="fas fa-angle-up"></a>');
+	$(window).on('load', function() {
+    setTimeout(function() {
+      $('.preloader').fadeOut('slow', function() {});
+   }, 1000);
+   });
 	$(function() {
    $.fn.scrollToTop = function() {
       $(this).hide().removeAttr("href");
