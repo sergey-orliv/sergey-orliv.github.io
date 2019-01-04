@@ -623,10 +623,10 @@ body {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 2px solid;
-  border-top-color: #000000;
-  border-bottom-color: rgba(0, 0, 0, 0.28);
-  border-left-color: #000000;
-  border-right-color: rgba(0, 0, 0, 0.28);
+  border-top-color: #ff0000;
+  border-bottom-color: rgba(255, 123, 123, 0.25);
+  border-left-color: #ff0000;
+  border-right-color: rgba(255, 123, 123, 0.25);
   -webkit-animation: page-loader-circle 0.8s linear infinite;
   animation: page-loader-circle 0.8s linear infinite;
 }
@@ -996,9 +996,11 @@ section.apps #apps_more p:hover {
   padding-bottom: 25px;
 }
 
-.apps_container div span p {
+.apps_container div span {
   padding-top: 0px;
   padding-bottom: 5px;
+  color: #797979;
+  font-size: 14px;
 }
 
 .apps_container div a p {
@@ -1105,10 +1107,6 @@ section.news h2 {
 
 .news_container div a:hover {
   color: #eb0009;
-}
-
-.news_container div span p {
-  color: #969696;
 }
 
 #news_button {
@@ -1273,7 +1271,7 @@ footer p {
   margin-right: 15px;
 }
 
-.footer_container div a:last-childimg {
+.footer_container div a:last-child img {
   margin-right: 0;
 }
 
@@ -2129,7 +2127,11 @@ a.cabinet_icon:hover {
     padding: 30px 0;
   }
 }
-
+@media only screen and (max-width: 1200px) {
+	.footer_container div:last-child {
+	 margin-top: 0px;
+	}
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .nav_container .nav_logo {
@@ -2255,12 +2257,16 @@ a.cabinet_icon:hover {
   section.cabinet {
     padding-top: 15px;
   }
+	.questions_form h2 {
+	 font-size: 20px;
+    padding-bottom: 10px;
+	}
   section.apps {
     padding: 40px 15px 30px 15px;
   }
   .questions_form form input {
     width: 100%;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 10px;
   }
   section.questions, section.agree {
