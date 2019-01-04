@@ -623,6 +623,9 @@ nav {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
+	-webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 
 nav ul a {
@@ -1352,6 +1355,9 @@ footer h6 {
 
 .scroll2 {
   font-size: 13px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 
 /**********************
@@ -1485,7 +1491,7 @@ footer h6 {
     padding: 100px 70px 80px 70px;
   }
   footer {
-    padding: 80px 40px 80px 40px;
+    padding: 60px 40px 60px 40px;
   }
   .footer_Brandi {
     width: 200px;
