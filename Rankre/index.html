@@ -219,8 +219,16 @@
             </ul>
          </div>
       </footer>
+		
    <script src="js/jquery-3.3.1.min.js"></script>
-   <script src="js/owl.carousel.min.js"></script>
+	<script>
+		$(window).on('load', function() {
+   		setTimeout(function() {
+      	$('.preloader').fadeOut('slow', function() {});
+   		}, 1000);
+   	});
+	</script>
+   <script src="js/owl.carousel.min.js">
    <script src="js/scripts.js"></script>
    <script src="js/owl.scrips.js"></script>
    </body>

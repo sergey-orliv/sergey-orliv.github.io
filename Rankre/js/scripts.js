@@ -1,9 +1,4 @@
 $(document).ready(function(){
-   $(window).on('load', function() {
-    setTimeout(function() {
-      $('.preloader').fadeOut('slow', function() {});
-   }, 1000);
-   });
    $("#back-top").hide();
    $(function () {
        $(window).scroll(function () {
