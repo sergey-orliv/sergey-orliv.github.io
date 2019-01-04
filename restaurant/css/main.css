@@ -532,7 +532,20 @@ p {
   font-family: 'Lato', sans-serif;
   color: #4c4c4c;
 }
-
+/*------------preloader-------*/
+#hellopreloader>p{
+	display:none;
+}
+#hellopreloader_preload{
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #d6d6d6 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;
+	background-size:70px;}
 /*------------header-------*/
 header {
   background-image: url(../img/Bg.jpg);
@@ -579,7 +592,6 @@ header i:hover {
 
 nav a {
   font-family: 'Gentium Book Basic', serif;
-  font-style: none;
   color: #fff;
   font-size: 21px;
   padding-top: 47px;
@@ -819,14 +831,14 @@ header h1 {
   right: -12px;
 }
 
-.spesial span p {
+.spesial span {
   padding: 0;
   border: 0;
   color: white;
   font-size: 12px;
-}
-
-.spesial span {
+  line-height: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   position: absolute;
   background-color: #cc9900;
   padding: 2px 15px;
@@ -839,7 +851,7 @@ header h1 {
 }
 
 .spesial span:hover {
-  background-color: black;
+  background-color: #676767;
 }
 
 /*---------------------section four------------------------*/
@@ -932,7 +944,6 @@ h6 {
 }
 
 .section_reserv_img img {
-  hight: 510px;
   width: 50%;
 }
 
@@ -1328,6 +1339,8 @@ font-family: 'Gentium Book Basic', serif;*/
   #popup_greek_salad {
     height: auto;
     width: 400px;
+	 margin-top: -200px;
+    margin-left: -200px;
   }
   #popup_greek_salad .greek_salad {
     height: 260px;
@@ -1336,6 +1349,8 @@ font-family: 'Gentium Book Basic', serif;*/
   #popup_spesial_pastitsio {
     height: auto;
     width: 400px;
+	 margin-top: -200px;
+    margin-left: -200px;
   }
 }
 
@@ -1372,6 +1387,7 @@ font-family: 'Gentium Book Basic', serif;*/
   }
   .section_igredients_main p {
     margin-bottom: 30px;
+	 text-align: justify;
   }
   #popup_spesial_pastitsio .pastitsio {
     width: 300px;
@@ -1380,7 +1396,7 @@ font-family: 'Gentium Book Basic', serif;*/
     height: 200px;
   }
   .section_reviews {
-    padding: 40px 20px;
+    padding: 40px 10px;
   }
   .section_reserv_img {
     display: none;
@@ -1394,8 +1410,10 @@ font-family: 'Gentium Book Basic', serif;*/
   footer div {
     width: 230px;
   }
+  header i{
+  	color:#f0f0f0;
+  }
 }
-
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .section_reviews_main {
@@ -1425,14 +1443,21 @@ font-family: 'Gentium Book Basic', serif;*/
     float: none;
     margin: 0 auto;
     width: 80%;
-    padding: 30px 40px;
+    padding: 30px 20px;
   }
   .section_reviews_img {
     display: none;
   }
   h6 {
-    font-size: 20px;
+    font-size: 18px;
+	  text-align: justify;
   }
+	.section_reserv_main p{
+		text-align: justify;
+	}
+	.section_abaut_colom1 p{
+		text-align: justify;
+	}
   form {
     width: 200px;
     margin: 0 auto;
@@ -1450,6 +1475,10 @@ font-family: 'Gentium Book Basic', serif;*/
   footer img {
     width: 150px;
     padding: 0;
+  }
+  .form_button {
+    width: 180px;
+    height: 40px;
   }
 }
 
@@ -1483,7 +1512,7 @@ font-family: 'Gentium Book Basic', serif;*/
     margin-top: 30px;
   }
   .section_reserv_main {
-    padding: 0px 20px;
+    padding: 0;
   }
   footer div {
     width: 80%;
