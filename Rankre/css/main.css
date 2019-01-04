@@ -1191,7 +1191,7 @@ section.contacts .contacts_form input {
 
 section.contacts .contacts_form a span {
   display: inline-block;
-  line-height: 32px;
+  line-height: 35px;
   padding-left: 30px;
   padding-right: 30px;
   height: 32px;
@@ -2300,6 +2300,25 @@ div.helps .helps_container_item div {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px) {
+	section.plus_andorra h1,section.plus_malta h1{
+		padding-left:10px;
+		padding-right:10px;
+	}
+	h1 {
+    font-size: 25px;
+	}
+	section.about p,section.migration p{
+		text-align: justify;
+	}
+	section.section_our p,section.pmg p  {
+		text-align: left;
+	}
+	.jobs_about_container div {
+    padding: 20px 0px 20px 70px;
+	}
+	section.jobs_about {
+    padding: 50px 30px 50px 40px;
+	}
   .how_noll {
     display: none;
   }
