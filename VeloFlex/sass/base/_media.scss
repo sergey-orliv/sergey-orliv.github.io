@@ -1,0 +1,129 @@
+/**********************
+* MEDIA
+**********************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .section_vintage .block_one, .section_vintage .block_two, .section_boriosa .block_two, .section_boriosa .block_one, .section_retro .block_one, .section_retro .block_two, .section_shop .block_one, .section_shop .block_three {
+    width: 50%;
+	}
+	.section_retro .block_three, .section_shop .block_two{
+		display: none;
+	}
+	.section_twitter {
+    padding: 100px 50px;
+	}
+	.form_input, .form_button{
+    max-width: 250px;
+    padding: 10px 10px;
+    font-size: 20px;
+    outline: none;
+	}
+	.form_button{
+		padding:10px 20px;
+	}
+	form {
+    max-width: 360px;
+	}
+	footer {
+    padding: 30px;
+	}
+	footer div {
+    width: 170px;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.section_retro .block_two .block_two-top, .section_vintage .block_two .block_two-top, .section_boriosa .block_one .block_one-top{
+		padding-top:40px;
+	} 
+	.section_boriosa, .section_vintage, .section_retro{
+    height: 650px;
+	}
+	.twitter-tweet-rendered {
+    margin: 0 auto !important;
+  }
+	nav a {
+    margin: 0 30px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.nav_point, .top_logo img, .section_vintage .block_two .block_two-bot, .section_boriosa .block_one .block_one-bot, .section_retro .block_two .block_two-bot, .section_retro .block_one, .section_shop .block_one{
+		display: none !important;
+	}
+	.top_logo i{
+		    display: inline-block !important;
+	}
+  nav a {
+    margin: 0 10px;
+		font-size: 12px;
+		width: 75px;
+	}
+	.section_shop .block_three{
+		width: 100%;
+	}
+	.section_vintage .block_one, .section_boriosa .block_two{
+		height: 350px;
+		width: 100%;
+	}
+	.section_vintage .block_two, 
+	.section_boriosa .block_one,
+	.section_retro .block_two,
+	.section_boriosa,
+	.section_vintage{
+		width: 100%;
+		height:auto;
+	}
+	.section_vintage p, .section_boriosa p, .section_retro p {
+    max-width: 600px;
+	}
+	#about {
+    padding: 70px 40px 70px 40px;
+		p {
+    	font-size: 16px;
+    	text-align: justify;
+		}
+	}
+	.section_retro{
+		height: auto;
+	}
+}
+@media only screen and (max-width : 650px) {
+	.section_form, .discover_shop, .section_twitter {
+    padding: 60px 20px;
+	}
+	footer{
+		display: block;
+	}
+	footer div{
+		width: auto;
+		text-align: center !important;
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	nav a {
+    margin: 0 5px;
+    font-size: 10px;
+    width: 60px;
+	}
+	nav{
+		height: 80px;
+		padding-top:30px;
+	}
+	.scroll_icon {
+    margin: 0 5px;
+	}
+	nav ul li:nth-child(4){
+		width: 20px;
+	}
+	.scroll a {
+    font-size: 10px;
+	}
+	.form_input, .form_button{
+    max-width: 180px;
+    font-size: 18px;
+	}
+}

@@ -1,0 +1,124 @@
+/**********************
+* MEDIA
+**********************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.section_retro .block_three,
+	.section_shop .block_one{
+		display: none;
+	}
+	.section_twitter {
+    padding: 100px 50px;
+	}
+	.form_input, .form_button{
+    max-width: 250px;
+    padding: 10px 10px;
+    font-size: 20px;
+    outline: none;
+	}
+	.form_button{
+		padding:10px 20px;
+	}
+	footer {
+    padding: 30px;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.section_vintage{
+		.block_one{
+			height: 350px;
+		}
+	}
+	.section_boriosa{
+		.block_two{
+			height: 350px;
+		}
+	}
+	.section_vintage p, .section_boriosa p, .section_retro p {
+    max-width: 700px;
+	}
+	.nav_point,
+	.top_logo img,
+	.section_vintage .block_two-bot,
+	.section_boriosa .block_one-bot,
+	.section_retro .block_two-bot,
+	.section_retro .block_one,
+	.section_shop .block_one,
+	.section_shop .block_two-right,
+	.section_shop .block_two-left{
+		display: none !important;
+	}
+	.section_vintage .block_two-top,
+	.section_boriosa .block_one-top,
+	.section_retro .block_two-top{
+		padding-top:50px;
+	} 
+	.twitter-tweet-rendered {
+    margin: 0 auto !important;
+  }
+	nav a {
+    margin: 0 30px;
+	}
+	footer{
+		justify-content: center !important;
+		div{
+			text-align: center !important;
+		}
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.top_logo i{
+		display: inline-block !important;
+	}
+  nav a {
+    margin: 0 10px;
+		font-size: 12px;
+		width: 75px;
+	}
+	#about {
+    padding: 70px 20px 70px 20px;
+		p {
+    	font-size: 16px;
+    	text-align: justify;
+		}
+	}
+}
+@media only screen and (max-width : 650px) {
+	.section_form, .discover_shop, .section_twitter {
+    padding: 60px 20px;
+	}
+	footer{
+		display: block !important;
+	}
+	footer div{
+		width: auto;
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	nav a{
+    margin: 0 5px;
+    font-size: 10px;
+    width: 60px;
+	}
+	nav{
+		height: 80px;
+		padding-top:30px;
+	}
+	.scroll_icon{
+    margin: 0 5px;
+	}
+	nav ul li:nth-child(4){
+		width: 20px;
+	}
+	.scroll a{
+    font-size: 10px;
+	}
+	.form_input, .form_button{
+    max-width: 180px;
+    font-size: 18px;
+	}
+}
