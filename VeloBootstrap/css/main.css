@@ -113,6 +113,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
+	text-decoration: none;
 }
 
 /**
