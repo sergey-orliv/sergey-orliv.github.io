@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,900" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+<!--
+   	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="fancybox/jquery.fancybox.css" type="text/css" media="screen" rel="stylesheet" />
+-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<main>
+  		<a href="#" class="main_logo"><img src="img/logo.png" alt="logo"></a>
+  		<p class="main_warning">Все поля обязательны для заполнения</p>
+  		<nav>
+  			<div class="burger_main">
+  				<div class="burger_line"></div>
+  				<div class="burger_line"></div>
+  				<div class="burger_line"></div>
+  				<div class="burger_active">
+  					<a href=""><p>more</p></a>
+  					<a href=""><p>more</p></a>
+  					<a href=""><p>more</p></a>
+  					<a href=""><p>more</p></a>
+  				</div>
+  			</div>
+  		</nav>
+  		<ul>
+  			<li id="one_page">1</li>
+  			<li id="two_page">2</li>
+  			<li id="three_page">3</li>
+  		</ul>
+  		<section class="section_one">
+  			<article class="section_one_article">
+  				<h4>Всего три простых шага для получения бонусов!</h4>
+  			</article>
+  			<div class="section_div section_one_form">
+  				<form action="#" method="post">
+  					<div class="surname"><input id="surname" type="text" placeholder="Фамилия" title="Введите Вашу фамилию"></div>
+  					<div class="name"><input id="name" type="text" placeholder="Имя" title="Введите Ваше Имя"></div>
+  					<div class="second_name"><input id="second_name" type="text" placeholder="Отчество" title="Введите Ваше Отчество"></div>
+  					<div class="form_radioButton">
+  						<div>
+    						<input type="radio" name="radio" class="radio" value="1"/>
+    						<span class="new_radio new_radio_active"></span>
+    						<p>Мужчина</p>
+							</div>
+							<div>
+    						<input type="radio" name="radio" class="radio" value="2"/>
+    						<span class="new_radio"></span>
+    						<p>Женщина</p>
+							</div>
+						</div>
+  					<div class="date"><input placeholder="Дата рождения" type="text" onfocus="(this.type='date')" id="date"></div>
+  					<div class="form_checkboxButton">
+    					<input type="checkbox" class="checkbox" value="1" />
+    					<span class="new_checkbox"></span>
+							<p>Соглашаюсь с <a href="#">условиями участия</a></p>
+  					</div>
+  					<button id="button_one" type="submit"><span>Продолжить</span><img src="img/Arrow.png" alt="arrow"></button>
+  				</form>
+  			</div>
+  		</section>  
+  		<section class="section_two">
+  			<article class="section_two_article">
+  				<h4>Половина пути уже пройдена</h4>
+  			</article>
+  			<div class="section_div section_two_form">
+  				<form action="#" method="post">
+  					<div class="phone"><input id="phone" type="text" placeholder="Телефон" title="Введите Ваш телефонный номер"></div>
+  					<div class="email"><input id="email" type="email" placeholder="Email" title="Введите Ваш Email"></div>
+  					<div class="password"><input id="password" type="password" placeholder="Пароль" title="Введите Ваш Пароль"></div>
+  					<div class="password2"><input id="password2" type="password" placeholder="Повторите пароль" title="Введите Ваш Пароль"></div>
+  					<button type="submit" id="button_two"><span>Продолжить</span><img src="img/Arrow.png" alt="arrow"></button>
+  				</form>
+  			</div>
+  		</section>  
+  		<section class="section_three">
+  			<article class="section_three_article">
+  				<h4>Осталось совсем <br>чуть-чуть</h4>
+  			</article>
+  			<div class="section_div section_three_form">
+  				<form action="#" method="post">
+  				<h5>На номер <span></span> отправлен код подтверждения</h5>
+  					<p>Введите его полем ниже</p>
+  					<div class="kod"><input id="kod" type="text" placeholder="Код"></div>
+  					<button type="submit" id="button_three"><span>Присоединиться</span></button>
+  					<a href="#">
+  						Отправить код ещё раз
+  					</a>
+  				</form>
+  			</div>
+  		</section> 
+  	</main>	
+   	<script src="js/jquery-3.3.1.min.js"></script>
+   	<script>
+			$("#button_one").on('click', function(event) {
+				event.preventDefault();
+				$("#name, #surname, #second_name, #date").removeClass("error");
+				$("div.surname, div.name, div.second_name, div.date").removeClass("mistake");
+				if ($("#surname").val() == ''){
+					$("#surname").addClass("error");
+					$("div.surname").addClass("mistake");}
+				else if ($("#name").val() == '') {
+					$("#name").addClass("error");
+					$("div.name").addClass("mistake");}
+				else if ($("#second_name").val() == '') {
+					$("#second_name").addClass("error");
+					$("div.second_name").addClass("mistake");}
+				else if ($("#date").val() == '') {
+					$("#date").addClass("error");
+					$("div.date").addClass("mistake");}
+				else if ($(".new_checkbox").hasClass('new_checkbox_active')) {
+					$('#two_page').trigger('click');}
+				else{$(".form_checkboxButton p").css('color', 'red');
+						 $(".form_checkboxButton a").css({
+							 'color': 'red',
+							 "border-bottom":"1px solid red",
+						 });} 
+			});
+			$("#button_two").on('click', function(event) {
+				event.preventDefault();
+				$("#phone, #email, #password, #password2").removeClass("error");
+				$("div.phone, div.email, div.password, div.password2").removeClass("mistake");
+				if ($("#phone").val() == ''){
+					$("#phone").addClass("error");
+					$("div.phone").addClass("mistake");}
+				else if ($("#email").val() == '') {
+					$("#email").addClass("error");
+					$("div.email").addClass("mistake");}
+				else if ($("#password").val() == '') {
+					$("#password").addClass("error");
+					$("div.password").addClass("mistake");}
+				else if ($("#password2").val() == '') {
+					$("#password2").addClass("error");
+					$("div.password2").addClass("mistake");}
+				else $('#three_page').trigger('click');
+				var phone_number = $("#phone").val();
+				$(".section_three_form h5 span").append(phone_number);
+			});
+			$("#button_three").on('click', function(event) {
+				event.preventDefault();
+				$("#kod").removeClass("error");
+				$("div.kod").removeClass("mistake");
+				if ($("#kod").val() == ''){
+					$("#kod").addClass("error");
+					$("div.kod").addClass("mistake");}
+				else alert("Ваша заявка отправленна");
+			});
+			$(".section_three a").on('click', function(event) {
+				event.preventDefault();
+				alert("Код отправлен");
+			});
+			$('.new_radio').on('click', function() {
+    		$('.new_radio').removeClass('new_radio_active');
+    		$(this).addClass('new_radio_active');
+    		$(this).prev('input.radio').prop('checked', true);
+			});
+			$('.new_checkbox').on('click', function() {
+    		$('.new_checkbox').removeClass('new_checkbox_active');
+    		$(this).addClass('new_checkbox_active');
+    		$(this).prev('input.checkbox').prop('checked', true);
+			});
+			$('#one_page').on('click', function() {
+				$('#one_page').css({
+					"border-top":"2px solid #FD6E20",
+					"border-left":"2px solid #FD6E20",
+					"border-right":"2px solid #FD6E20",
+					"border-bottom":"0",
+					"height": "34px",
+				});
+				$('#two_page, #three_page').css({
+					"border":"1px solid #FD6E20",
+					"height": "32px",
+				});
+    		$('.section_one').css('display', 'flex');
+				$('.section_two, .section_three').css('display', 'none');
+			});
+			$('#two_page').on('click', function() {
+				$('#two_page').css({
+					"border-top":"2px solid #D47C01",
+					"border-left":"2px solid #D47C01",
+					"border-right":"2px solid #D47C01",
+					"border-bottom":"0",
+					"height": "34px",
+				});
+				$('#one_page, #three_page').css({
+					"border":"1px solid #D47C01",
+					"height": "32px",
+				});
+    		$('.section_two').css('display', 'flex');
+				$('.section_one, .section_three').css('display', 'none');
+			});
+			$('#three_page').on('click', function() {
+				$('#three_page').css({
+					"border-top":"2px solid #E93A29",
+					"border-left":"2px solid #E93A29",
+					"border-right":"2px solid #E93A29",
+					"border-bottom":"0",
+					"height": "34px",
+				});
+				$('#one_page, #two_page').css({
+					"height": "32px",
+					"border":"1px solid #E93A29",
+				});
+    		$('.section_three').css('display', 'flex');
+				$('.section_one, .section_two').css('display', 'none');
+			});
+		</script>
+  </body>
+</html>
