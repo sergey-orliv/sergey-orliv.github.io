@@ -8,11 +8,20 @@ $(document).ready(function(){
     function func(){
       $("#body").addClass("body_hidden");
     };
-    $("#main_preloader").addClass("done");
+    //$("#main_preloader").addClass("done");
     $("#hello path").addClass("amimation_hello");
     $("#i-am path").addClass("amimation_i-am");
     setTimeout(func, 0700);
 });
+document.body.onload=function(){
+  setTimeout(function(){
+    var preloader = document.getElementById("main_preloader");
+    if( !preloader.classList.contains("done")){
+      preloader.classList.add("done");
+    }
+  },0600);
+}
+
 $("#my_foto").click(function(e){
   e.preventDefault;
   $("#my_big_foto").css("display","block");
