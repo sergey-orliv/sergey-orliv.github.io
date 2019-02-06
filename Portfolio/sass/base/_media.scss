@@ -1,0 +1,139 @@
+/**********************
+* MEDIA
+**********************/
+@media only screen and (max-width : 1400px) {
+  footer {
+    width: 90%;
+  }
+  .main_title{
+    width: 40%;
+  }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 220px 220px;
+    grid-template-areas: "block1 block3"
+                         "block2 block4"
+                         "block5 block6";
+  }
+  aside {
+    width: 800px;
+  }
+  .main_title{
+    left:40%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .main_title{
+    left:30%;
+  }
+  footer {
+    width: 85%;
+    padding: 25px 35px;
+    box-sizing: border-box;
+  }
+  aside {
+    width: 80%;
+    padding:20px;
+    text-align: center;
+  } 
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  #velo_more .vel {
+    width: 230px;
+    height: 160px;
+  }
+  #velo_more {
+    width: 480px;
+  }
+  #my_big_foto {
+    width: 470px;
+    height: 500px;
+  }
+  .main_information{
+    display: none;
+  }
+  .main_title {
+    left: 50%;
+    top:250px;
+    width: 400px;
+  }
+  .main_menu {
+    top:410px;
+    left:50%;
+    transform:translateX(-50%);
+    right: auto;
+    label{
+      display: none;
+    }
+    .burger-line{
+      display: none;
+    }
+  }
+  main {
+    height: 1120px;
+  }
+  .wrapper a:first-child{
+    border-top: 0;
+    border-radius: 10px 10px 0px 0px;
+  }  
+  footer {
+    position:relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px 220px 220px 220px 220px 220px;
+    grid-template-areas: "block1"
+                         "block2"
+                         "block3"
+                         "block4"
+                         "block5"
+                         "block6";
+  }
+  h6, h5{
+    font-size: 17px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 550px) {
+  #velo_more {
+    width: auto;
+    a:nth-child(5){
+      display: none;
+    }
+    a:nth-child(4){
+      display: none;
+    }
+  }
+  #velo_more .vel {
+    width: 280px;
+    height: 180px;
+  }
+  #my_big_foto {
+    width: 320px;
+    height: 380px;
+  }
+  .main_title {
+    top: 230px;
+    width: 80%;
+  }
+  aside {
+    width: 80%;
+    height: auto;
+    text-align: center;
+  }
+  footer {
+    width: 90%;
+    padding: 25px 35px;
+    grid-template-rows: 180px 180px 180px 180px 180px 180px;
+  }
+  
+}
+@media only screen and (max-width : 480px) {
+
+}
