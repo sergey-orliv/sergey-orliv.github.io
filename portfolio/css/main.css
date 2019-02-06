@@ -541,8 +541,7 @@ li {
   width: 100px;
   height: 100px;
   border: 4px solid rgba(255, 255, 255, 0);
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   border-top-color: #f5ff00;
   left: 50%;
   top: 50%;
@@ -561,8 +560,7 @@ li {
   bottom: 10px;
   left: 10px;
   right: 10px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   border: 4px solid rgba(255, 255, 255, 0);
   border-top-color: #006cff;
   -webkit-animation: 3s spin-2 infinite linear;
@@ -578,8 +576,7 @@ li {
   left: 25px;
   right: 25px;
   border: 3px solid rgba(255, 255, 255, 0);
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   border-top-color: #ff3f46;
   border-right-color: #ff3f46;
   -webkit-animation: 8s spin-3 infinite linear;
@@ -680,8 +677,7 @@ body {
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
-  -webkit-background-size: 200% 200%;
-          background-size: 200%;
+  background-size: 200%;
   -webkit-transform: translateY(35px);
       -ms-transform: translateY(35px);
           transform: translateY(35px);
@@ -702,8 +698,7 @@ body {
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
-  -webkit-background-size: 200% 200%;
-          background-size: 200%;
+  background-size: 200%;
   -webkit-transform: translateY(20px);
       -ms-transform: translateY(20px);
           transform: translateY(20px);
@@ -748,15 +743,12 @@ main {
   height: 100%;
   position: relative;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
@@ -764,8 +756,7 @@ main {
 
 .main_information label {
   padding: 15px;
-  -webkit-border-radius: 0 10px 10px 0;
-          border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
   background-color: rgba(255, 255, 255, 0.18);
   position: absolute;
   top: 30px;
@@ -794,8 +785,7 @@ main {
   top: 90px;
   left: 0;
   background-color: rgba(255, 255, 255, 0.18);
-  -webkit-border-radius: 0 20px 20px 0;
-          border-radius: 0 20px 20px 0;
+  border-radius: 0 20px 20px 0;
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -1023,8 +1013,7 @@ main input {
   cursor: pointer;
   z-index: 2;
   line-height: 50px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.18);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1100,8 +1089,7 @@ main input {
   height: 30px;
   text-align: center;
   line-height: 30px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   -webkit-transition: .1s;
   -o-transition: .1s;
   transition: .1s;
@@ -1109,8 +1097,7 @@ main input {
 
 .wrapper a div {
   display: block;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 200px;
   margin: 0 auto;
   overflow: hidden;
@@ -1140,8 +1127,7 @@ main input {
 }
 
 .wrapper a:last-child {
-  -webkit-border-radius: 0px 0px 10px 10px;
-          border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 #check-menu:checked ~ .main-menu {
@@ -1171,8 +1157,7 @@ main input {
 }
 
 #check-menu:checked ~ label {
-  -webkit-border-radius: 10px 10px 0px 0px;
-          border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 aside {
@@ -1183,19 +1168,15 @@ aside {
   overflow: hidden;
   margin: 0 auto;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.51);
   margin-bottom: 20px;
   position: relative;
@@ -1236,13 +1217,18 @@ footer {
   padding: 30px 50px;
   margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.31);
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
+  border-radius: 30px;
+  display: -ms-grid;
   display: grid;
   grid-gap: 20px;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 210px 20px 130px 20px 130px 20px 210px;
   grid-template-rows: 210px 130px 130px 210px;
-  grid-template-areas: "block1 block1 block2" "block1 block1 block3" "block4 block5 block3" "block4 block5 block6";
+      grid-template-areas: "block1 block1 block2"
+ "block1 block1 block3"
+ "block4 block5 block3"
+ "block4 block5 block6";
 }
 
 footer a {
@@ -1257,28 +1243,22 @@ footer a {
   width: 100%;
   height: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   position: relative;
   text-align: center;
 }
@@ -1370,20 +1350,16 @@ footer a {
   top: 0;
   left: 0;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-transition: 0.4s;
@@ -1391,12 +1367,10 @@ footer a {
   transition: 0.4s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   justify-content: center;
 }
 
@@ -1434,16 +1408,25 @@ footer a {
 }
 
 .block1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: block1;
   background-image: url(../img/XXL.jpg);
 }
 
 .block2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
   grid-area: block2;
   background-image: url(../img/rankre.jpg);
 }
 
 .block3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
   grid-area: block3;
 }
 
@@ -1456,6 +1439,9 @@ footer a {
 }
 
 .block4 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
   grid-area: block4;
 }
 
@@ -1468,6 +1454,9 @@ footer a {
 }
 
 .block5 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
   grid-area: block5;
 }
 
@@ -1480,6 +1469,8 @@ footer a {
 }
 
 .block6 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
   grid-area: block6;
   background-image: url(../img/Velo.jpg);
 }
@@ -1487,8 +1478,7 @@ footer a {
 #my_big_foto {
   width: 540px;
   height: 600px;
-  -webkit-border-radius: 40px;
-          border-radius: 40px;
+  border-radius: 40px;
   z-index: 100;
   position: fixed;
   display: none;
@@ -1522,8 +1512,7 @@ footer a {
   line-height: 40px;
   width: 40px;
   height: 40px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   cursor: pointer;
   -webkit-transition: .5s;
   -o-transition: .5s;
@@ -1543,8 +1532,7 @@ footer a {
 #velo_more {
   width: 620px;
   height: auto;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  border-radius: 20px;
   z-index: 100;
   position: fixed;
   display: none;
@@ -1559,15 +1547,12 @@ footer a {
   overflow: hidden;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #velo_more .vel {
@@ -1578,20 +1563,16 @@ footer a {
           box-sizing: border-box;
   background-image: url(../img/Velo.jpg);
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: center center;
   position: relative;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
@@ -1624,15 +1605,48 @@ footer a {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   footer {
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 220px 20px 220px 20px 220px;
     grid-template-rows: 220px 220px 220px;
-    grid-template-areas: "block1 block3" "block2 block4" "block5 block6";
+        grid-template-areas: "block1 block3"
+ "block2 block4"
+ "block5 block6";
   }
   aside {
     width: 800px;
   }
   .main_title {
     left: 40%;
+  }
+  .block1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .block2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .block3 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+  }
+  .block4 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+  }
+  .block5 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .block6 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
   }
 }
 
@@ -1694,17 +1708,52 @@ footer a {
   }
   .wrapper a:first-child {
     border-top: 0;
-    -webkit-border-radius: 10px 10px 0px 0px;
-            border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
   }
   footer {
     position: relative;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: 220px 20px 220px 20px 220px 20px 220px 20px 220px 20px 220px;
     grid-template-rows: 220px 220px 220px 220px 220px 220px;
-    grid-template-areas: "block1" "block2" "block3" "block4" "block5" "block6";
+        grid-template-areas: "block1"
+ "block2"
+ "block3"
+ "block4"
+ "block5"
+ "block6";
   }
   h6, h5 {
     font-size: 17px;
+  }
+  .block1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .block2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .block3 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .block4 {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .block5 {
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .block6 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
   }
 }
 
@@ -1739,6 +1788,7 @@ footer a {
   footer {
     width: 90%;
     padding: 25px 35px;
+    -ms-grid-rows: 180px 20px 180px 20px 180px 20px 180px 20px 180px 20px 180px;
     grid-template-rows: 180px 180px 180px 180px 180px 180px;
   }
 }
