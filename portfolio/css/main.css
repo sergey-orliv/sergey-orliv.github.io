@@ -1791,4 +1791,7 @@ footer a {
     -ms-grid-rows: 180px 20px 180px 20px 180px 20px 180px 20px 180px 20px 180px;
     grid-template-rows: 180px 180px 180px 180px 180px 180px;
   }
+  .bottom-line, .bottom-line2{
+    display: none;
+  }
 }
