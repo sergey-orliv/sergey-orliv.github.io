@@ -14,56 +14,57 @@
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
-  <body id="body">
-   <div id="preloader">
-     <div class="loader"></div>
-   </div>
-   <div class="bottom-line"></div>
-   <div class="bottom-line2"></div>
-    <main>
-      <div class="main_information">
-        <input type="checkbox" id="check-information">
-        <label for="check-information">What I can do</label>
+  <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <section class="wrapper">
+      <div class="bottom-line"></div>
+      <div class="bottom-line2"></div>
+      <main>
         <div class="information">
-          <ul>
-            <li id="html">HTML</li>
-            <li id="css">CSS
-              <ul class="sub-menu" id="sub-css">
-                <!--<li><a href="#">Слайдер</a></li>-->
-              </ul>
-            </li>
-            <li id="js">JS
-              <ul class="sub-menu" id="sub-js">
-                <!--<li><a href="#">Слайдер</a></li>-->
-              </ul>
-            </li>
-            <li id="jq">JQuery
-             <ul class="sub-menu" id="sub-jq">
-                <li><a href="#">Ajax</a></li>
-              </ul>
-            </li>
-          </ul>
+          <input type="checkbox" id="check-information">
+          <label for="check-information">What I can do</label>
+          <div class="information_main">
+            <ul>
+              <li id="html">HTML</li>
+              <li id="css">CSS
+                <ul class="sub-menu" id="sub-css">
+                  <li><a href="#">Слайдер</a></li>
+                </ul>
+              </li>
+              <li id="js">JS
+                <ul class="sub-menu" id="sub-js">
+                  <!--<li><a href="#">Слайдер</a></li>-->
+                </ul>
+              </li>
+              <li id="jq">JQuery
+               <ul class="sub-menu" id="sub-jq">
+                  <li><a href="#">Ajax</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="main_menu">
-        <div class="wrapper">
-          <input type="checkbox" id="check-menu">
-          <label for="check-menu">Contacts</label>
-          <div class="burger-line burger-line1"></div>
-          <div class="burger-line burger-line2"></div>
-          <div class="burger-line burger-line3"></div>
-          <div class="burger-line burger-line4"></div>
-          <nav class="main-menu">
-            <a id="my_foto" href="#"><div><img src="img/me.jpeg" alt="foto"></div>Orlov Sergey</a>
-            <a href="mailto:serega_arlov@mail.ru"><i class="far fa-envelope"></i>serega_arlov@mail.ru</a>
-            <a href="tel:+375298623536"><i class="fas fa-mobile-alt"></i>+375-(29)-862-35-36</a>
-            <a href="https://vk.com/id88546795" target="_blank"><i class="fab fa-vk"></i>vk.com</a>
-            <a href="https://www.linkedin.com/in/sergey-orlov-89b51a174/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
-            <a href="https://github.com/sergey-orliv" target="_blank"><i class="fab fa-github"></i>GitHub</a>
-          </nav>
+        <div class="contacts">
+          <div class="contacts_wrapper">
+            <input type="checkbox" id="check-contacts">
+            <label for="check-contacts">Contacts</label>
+            <div class="burger-line burger-line1"></div>
+            <div class="burger-line burger-line2"></div>
+            <div class="burger-line burger-line3"></div>
+            <div class="burger-line burger-line4"></div>
+            <nav class="contacts-main">
+              <a id="my_foto" href="#"><div><img src="img/me.jpeg" alt="foto"></div>Orlov Sergey</a>
+              <a href="mailto:serega_arlov@mail.ru"><i class="far fa-envelope"></i>serega_arlov@mail.ru</a>
+              <a href="tel:+375298623536"><i class="fas fa-mobile-alt"></i>+375-(29)-862-35-36</a>
+              <a href="https://vk.com/id88546795" target="_blank"><i class="fab fa-vk"></i>vk.com</a>
+              <a href="https://www.linkedin.com/in/sergey-orlov-89b51a174/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+              <a href="https://github.com/sergey-orliv" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+            </nav>
         </div>
-      </div>
-      <div class="main_title">
+        </div>
+        <div class="title">
         <svg version="1.1" id="hello" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 559 256" style="enable-background:new 0 0 559 256;" xml:space="preserve">
           <style type="text/css"> .st1{fill:#ffffff;stroke:#00e2ff;stroke-width:2;stroke-miterlimit:10;}
           </style>
@@ -259,44 +260,45 @@
         </g>
         </svg>
       </div>  
-      <div id="my_big_foto">
+        <div id="my_big_foto">
         <div>
         <img id="big_foto" src="img/my-big-foto.jpg" alt="foto">
         <i id="close_foto" class="fas fa-times" title="Close"></i>
         </div>
       </div>
-    </main>  
-    <aside>
-      <a id="close" title="Закрыть"><i class="fas fa-times" title="Close"></i></a>
-      <h6>I know all these projects are outdated and I work on it every day...</h6>
-    </aside>
-    <footer>
-      <div class="block block1 border">
+      </main>  
+      <aside>
+        <a id="close" title="Закрыть"><i class="fas fa-times" title="Close"></i></a>
+        <h6>I know all these projects are outdated and I work on it every day...</h6>
+      </aside>
+      <footer>
+        <div class="block block1 border">
         <h5>XLL discount</h5>
-        <a href="https://sergey-orliv.github.io/XLL/" target="_blank">more</a>
+        <a href="https://sergey-orliv.github.io/XLL/" target="_blank">Know more</a>
       </div>
-      <div class="block block2 border">
+        <div class="block block2 border">
         <h5>Rankre</h5>
-        <a href="https://sergey-orliv.github.io/Rankre/" target="_blank">more</a>
+        <a href="https://sergey-orliv.github.io/Rankre/" target="_blank">Know more</a>
       </div>
-      <div class="block block3 card">
+        <div class="block block3 card">
         <div class="front"><h5>Brandi</h5></div>
         <div class="back"><div class="back_border"></div><h5>Brandi</h5>
-        <a href="https://sergey-orliv.github.io/Brandi/" target="_blank">more</a></div>
+        <a href="https://sergey-orliv.github.io/Brandi/" target="_blank">Know more</a></div>
       </div>
-      <div class="block block4 card">
+        <div class="block block4 card">
         <div class="front"><h5>My first coding JS<br> and jQuery</h5></div>
-        <div class="back"><div class="back_border"></div><h5>My first coding JS<br> and jQuery</h5><a href="https://sergey-orliv.github.io/Tick/" target="_blank">more</a></div>
+        <div class="back"><div class="back_border"></div><h5>My first coding JS<br> and jQuery</h5><a href="https://sergey-orliv.github.io/Tick/" target="_blank">Know more</a></div>
       </div>
-      <div class="block block5 card">
+        <div class="block block5 card">
         <div class="front"><h5>Restaurant</h5></div>
-        <div class="back"><div class="back_border"></div><h5>Restaurant</h5><a href="https://sergey-orliv.github.io/restaurant/" target="_blank">more</a></div>
+        <div class="back"><div class="back_border"></div><h5>Restaurant</h5><a href="https://sergey-orliv.github.io/restaurant/" target="_blank">Know more</a></div>
       </div>
-      <div class="block block6 border">
+        <div class="block block6 border">
         <h5>My first coding<br>HTML and CSS</h5>
-        <a href="#" target="_blank" id="velo">more</a>
+        <a href="#" target="_blank" id="velo">Know more</a>
       </div>
     </footer>
+    </section>
     <div id="velo_more">
       <a href="" id="close_velo"><i class="fas fa-times" title="Close"></i></a>
       <a href="https://sergey-orliv.github.io/VeloGrid/" target="_blank" class="vel border">Css Grid</a>

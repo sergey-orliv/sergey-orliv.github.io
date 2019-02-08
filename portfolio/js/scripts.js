@@ -1,25 +1,30 @@
 document.body.onload=function(){
+  var preloader = document.getElementById("preloader");
+  var loader = document.querySelector(".loader");
   setTimeout(function(){
-    var preloader = document.getElementById("preloader");
+    if(!loader.classList.contains("done")){
+      loader.classList.add("done");
+    }
+  },0300);
+  setTimeout(function(){
     if(!preloader.classList.contains("done")){
       preloader.classList.add("done");
     }
-  },0600);
+  },1000);
   setTimeout(function(){
-    document.getElementById("check-menu").checked = true;
-  },1600);
+    document.getElementById("check-contacts").checked = true;
+  },3600);
   setTimeout(function(){
     document.getElementById("check-information").checked = true;
-  },2300);
+  },4300);
 }
 $(document).ready(function(){
     $("#hello path").addClass("amimation_hello");
     $("#i-am path").addClass("amimation_i-am");
     $("#close").click(function(e){
       e.preventDefault;
-      $("aside").animate({"opacity":"0"},1000, function(){
-      $("aside").animate({"height":"0"},0400);
-        
+      $("aside").animate({"opacity":"0"},0400, function(){
+      $("aside").animate({"height":"0", "margin-bottom":"0"},0300);  
       });
     });
   $("#my_foto").click(function(e){
