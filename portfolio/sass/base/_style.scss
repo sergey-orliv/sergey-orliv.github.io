@@ -2,6 +2,75 @@
   font-family: 'Sarabun', sans-serif;
 }
 //--------preloader----------
+.preloader{
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ededed;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: .7s all;
+  opacity:1;
+  visibility: visible;
+}
+.loader{
+  position:relative;
+  display: flex;
+}
+.loader span{
+  color: #ededed;
+  margin: 0 15px;
+  font-size: 8em;
+  font-weight: bold;
+  animation: animate 2.1s linear infinite;
+  font-family: sans-serif;
+}
+.loader span:nth-child(1){
+  animation-delay: 0s;
+}
+.loader span:nth-child(2){
+  animation-delay: 0.2s;
+}
+.loader span:nth-child(3){
+  animation-delay: 0.4s;
+}
+.loader span:nth-child(4){
+  animation-delay: 0.6s;
+}
+.loader span:nth-child(5){
+  animation-delay: 0.8s;
+}
+.loader span:nth-child(6){
+  animation-delay: 1s;
+}
+.loader span:nth-child(7){
+  animation-delay: 1.2s;
+}
+@keyframes animate{
+  0%{
+    text-shadow: 0 0 10px rgba(0,0,0,0);
+    transform: scale(1);
+  } 
+  40%{
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.4);
+  } 
+  80%{
+    text-shadow: 0 0 10px rgba(0,0,0,0);
+    transform: scale(1);
+  }
+}
+.done{
+  opacity:0 !important;
+  visibility: hidden !important;
+}
+/*
+//--------preloader----------
 #preloader{
   position:fixed;
   top: 0;
@@ -81,8 +150,9 @@
     transform: rotate(360deg);
   }
 }
-//----------section.wrapper---------------
-section.wrapper{
+*/
+//----------div.wrapper---------------
+div.wrapper{
   background:
   linear-gradient(135deg, hsla(179.45, 95.45%, 47.36%, 1) 0%, hsla(179.45, 95.45%, 47.36%, 0) 70%),
   linear-gradient(25deg, hsla(299.28, 99.84%, 45.65%, 1) 10%, hsla(299.28, 99.84%, 45.65%, 0) 80%),
@@ -125,7 +195,7 @@ section.wrapper{
   25%{
     transform: translateY(0);
   }
-  75{
+  75%{
     transform: translateY(-10px);
   }
   100% {
@@ -359,7 +429,7 @@ main{
   opacity: 0;
 }
 #i-am path{
-  stroke:#00e2ff;
+  stroke:#9d00ff;
   fill:#fff;
   stroke-dasharray:1200;
   opacity: 0;
@@ -455,8 +525,8 @@ aside:hover{
 aside:hover a{
   color:#fff;
 }
-//---------------footer----------------
-footer{
+//---------------section----------------
+section{
   z-index: 2;
   width: 75%;
   height: auto;
@@ -517,7 +587,7 @@ footer{
     right:5%;
     border-top:1px solid #FFF; 
     border-bottom:1px solid #FFF;
-    transition: 0.2s;
+    transition: 0.5s;
     transform: scaleX(0);
   }
   .border::after{
@@ -529,7 +599,7 @@ footer{
     right:5%;
     border-left:1px solid #FFF; 
     border-right:1px solid #FFF;
-    transition: 0.2s;
+    transition: 0.5s;
     transform: scaleY(0);
   }
   .border:hover:before,

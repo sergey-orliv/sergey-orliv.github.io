@@ -2,7 +2,7 @@
 * MEDIA
 **********************/
 @media only screen and (max-width : 1400px) {
-  footer {
+  section {
     width: 90%;
   }
   main .title{
@@ -11,7 +11,7 @@
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  footer {
+  section {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 220px 220px 220px;
     grid-template-areas: "block1 block3"
@@ -31,7 +31,7 @@
   main .title{
     left:30%;
   }
-  footer {
+  section {
     padding: 25px 35px;
     box-sizing: border-box;
   }
@@ -81,7 +81,7 @@
     border-top: 0;
     border-radius: 10px 10px 0px 0px;
   }  
-  footer {
+  section {
     position:relative;
     grid-template-columns: 1fr;
     grid-template-rows: 220px 220px 220px 220px 220px 220px;
@@ -92,12 +92,9 @@
                          "block5"
                          "block6";
   }
-  h6, h5{
+  h2, h5{
     font-size: 17px;
   }
-  /*section.wrapper{
-    background-attachment:inherit
-  }*/
   .bottom-line, .bottom-line2{
     display: none;
   }
@@ -131,7 +128,7 @@
     height: 100px;
     text-align: center;
   }
-  footer {
+  section {
     width: 90%;
     grid-template-rows: 180px 180px 180px 180px 180px 180px;
   }

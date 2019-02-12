@@ -15,13 +15,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
-    <div id="preloader">
+    <!--<div id="preloader">
       <div class="loader"></div>
+    </div>-->
+    <div id="preloader" class="preloader">
+      <div class="loader">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+      </div>
     </div>
-    <section class="wrapper">
+    <div class="wrapper">
       <div class="bottom-line"></div>
       <div class="bottom-line2"></div>
       <main>
+        <h1 hidden>Information</h1>
         <div class="information">
           <input type="checkbox" id="check-information">
           <label for="check-information">What I can do</label>
@@ -66,7 +78,7 @@
         </div>
         <div class="title">
         <svg version="1.1" id="hello" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 559 256" style="enable-background:new 0 0 559 256;" xml:space="preserve">
-          <style type="text/css"> .st1{fill:#ffffff;stroke:#00e2ff;stroke-width:2;stroke-miterlimit:10;}
+          <style type="text/css"> .st1{fill:#ffffff;stroke:#9d00ff;stroke-width:2;stroke-miterlimit:10;}
           </style>
           <g>
           	<path class="st1" d="M305,19c0.9-1.2,2.8-1.2,5.6-0.1c2.8,1.1,5.5,3,8.1,5.6c2.6,2.6,4.6,5.6,6.1,9.1c1.5,3.5,1.4,6.9-0.2,10.2
@@ -269,9 +281,10 @@
       </main>  
       <aside>
         <a id="close" title="Закрыть"><i class="fas fa-times" title="Close"></i></a>
-        <h6>I know all these projects are outdated and I work on it every day...</h6>
+        <h2>I know all these projects are outdated and I work on it every day...</h2>
       </aside>
-      <footer>
+      <section>
+        <h1 hidden>My projects</h1> 
         <div class="block block1 border">
         <h5>XLL discount</h5>
         <a href="https://sergey-orliv.github.io/XLL/" target="_blank">Know more</a>
@@ -297,8 +310,8 @@
         <h5>My first coding<br>HTML and CSS</h5>
         <a href="#" target="_blank" id="velo">Know more</a>
       </div>
-    </footer>
     </section>
+    </div>
     <div id="velo_more">
       <a href="" id="close_velo"><i class="fas fa-times" title="Close"></i></a>
       <a href="https://sergey-orliv.github.io/VeloGrid/" target="_blank" class="vel border">Css Grid</a>
