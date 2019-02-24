@@ -1,0 +1,153 @@
+/**********************
+* MEDIA
+**********************/
+
+@media only screen and (max-width : 1400px) {
+  .section__form {
+    height: 1650px;
+  }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .section__form {
+    height: 1700px;
+  }
+  .section__form .section__form_main {
+    width: 770px; 
+    padding: 60px 70px 60px 70px;
+  }
+  .main-form__contacts .wrapper-input input{
+    width: 300px;
+  }
+  .other-one {
+    margin-bottom: 40px;
+  }
+  .other-two {
+    margin-bottom: 75px;
+  }
+  .main-form__other .qestion-one {
+    left: 0px;
+    top: 38px;
+    width: 208px;
+  }
+  .main-form__other .qestion-two {
+    left: 0px;
+    top: 38px;
+    width: 208px;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 850px) {
+  .section__form {
+    height: 1700px;
+  }
+  .section__form .section__form_main {
+    width: 600px; 
+    padding: 60px 100px 60px 100px;
+  }  
+  .main-form__contacts .wrapper-input input{
+    width: 400px;
+  }
+  .main-form__other .qestion-one {
+    top: 55px;
+    width: 208px;
+  }
+  .other-two {
+    margin-bottom: 55px;
+  }
+  .main-form__foto {
+    margin-bottom: 65px;
+  }
+  .main-form__foto p {
+    display:block;
+    width: 100%;
+    position: static;
+  }
+  .main-form__foto label {
+    position: absolute;
+    top: 55px;
+  }
+  .main-logo .main-logo__voyage {
+    margin-bottom: 35px;
+  }
+  .main-form__agreement.agreement-one {
+    margin-bottom: 20px;
+  }
+  .main-form__agreement.agreement-two {
+    margin-bottom: 20px;
+  }
+  .main-form__control, .main-form__button {
+    margin-bottom: 30px;
+  }
+  .main-logo{
+    width: 280px;
+    margin:0 auto;
+  }
+  .main-form__control p{
+    line-height: 32px;
+  }
+  .main-form__control input{
+    height: 30px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 650px) {
+  .section__form .section__form_main {
+    width: 450px; 
+    padding: 50px;
+  } 
+  .main-form__contacts .wrapper-input input{
+    width: 350px;
+  }
+  .main-info{
+    text-align: justify;
+  }
+  .main-form__agreement .agreement-checkbox {
+    position: absolute;
+  }
+  .main-form__agreement .agreement-label{
+    font-size: 18px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 500px) {
+  .section__form .section__form_main {
+    width: 360px; 
+    padding: 30px;
+  } 
+  .main-form__contacts .wrapper-input input{
+    width: 300px;
+  }
+  .main-form__button {
+    display: block;
+    width: 300px;
+  }
+  .main-logo {
+    width: 220px;
+    margin: 0 auto;
+  }
+  .main-logo .main-logo__hashtag {
+    font-size: 25px;
+  }
+  .main-form__agreement p {
+    font-size: 18px;
+  }
+  .main-form__button {
+    font-size: 15px;
+    width: auto;
+    padding:10px;
+  }
+}
+@media only screen and (max-width : 360px){
+  .section__form .section__form_main {
+    width: 320px; 
+    padding: 30px;
+  }
+  .main-form__contacts .wrapper-input input{
+    width: 260px;
+  }
+  .section__form {
+    height: 1675px;
+  }
+}

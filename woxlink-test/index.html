@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <section class="section__form">
+      <div class="section__form_main">
+        <div class="main-logo">
+          <a class="main-logo__hashtag" target="_blank" href="#" >#Gvq<span>mon</span>voyage</a>
+          <img class="main-logo__camera" src="img/logo1.png" alt="logo">
+          <a class="main-logo__logotype" target="_blank" href="#"><img class="logo" src="img/logo2.png" alt="logo"></a>
+          <img class="main-logo__voyage" src="img/logo3.png" alt="logo">
+        </div>
+        <div class="main-info">
+          <p>Remplissez le formulaire ci-dessous et joignez votre meilleure photo prise lors de votre voyage avec GVQ et courez la chance de gagner un crédit-voyage de 500$* sur votre prochain voyage, un Guides Voir de votre choix, et la chance de voir votre photo dans notre brochure édition Été-Automne 2018.</p>
+        </div>
+        <form class="main-form" method="post" id="main-form">
+          <div class="main-form__contacts">
+            <div class="wrapper-input">
+              <input id="non" name="Nom" type="text" placeholder="Nom*" title="Nom" class="">
+            </div>
+            <div class="wrapper-input">
+              <input name="Prenom" type="text" placeholder="Prénom*" title="Prénom">
+            </div>
+            <div class="wrapper-input">
+              <input name="Telephone" type="email" placeholder="Téléphone*" title="Téléphone">
+            </div>
+            <div class="wrapper-input">
+              <input name="Courriel" type="text" placeholder="Courriel*" title="Courriel">
+            </div>
+            <div class="wrapper-input">
+              <input name="Cod" type="text" placeholder="Code postal*" title="Code postal">
+            </div>
+          </div>
+          <div class="main-form__other other-one">
+            <p>Avez-vous déjà voyagé avec Groupe Voyages Québec?</p>
+            <div class="wrapper-select qestion-one">
+              <select name="qestionOne">
+                <option value="1">Non</option>
+                <option value="2">Yes</option>
+                <option value="3">Test</option>
+              </select>
+              <img class="select-arrow" src="img/1.png" alt="img">
+            </div>
+          </div>
+          <div class="main-form__other other-two">
+              <p>Quel était votre destination?</p>
+              <div class="wrapper-select qestion-two">
+                <select name="qestionTwo">
+                  <option value="1">Faites votre choix</option>
+                  <option value="2">Faites votre choix one</option>
+                  <option value="3">Faites votre choix two</option>
+                </select>
+                <img class="select-arrow" src="img/1.png" alt="img">
+              </div>
+            </div>
+          <div class="main-form__foto">
+            <input id="file-input" type="file" name="file" multiple>
+            <label for="file-input">Joindre un fichier</label>
+            <p>Téléchargez votre photo<br><span>Résolution minimum de 300 DPI, poids minimum: 1Mo, poids maximum: 6 Mo.</span></p>
+          </div>
+          <div class="main-form__agreement agreement-one">
+            <label>
+              <input type="checkbox" name="agreementOne" class="check__checkbox">
+    				  <span class="agreement-checkbox"></span>
+						  <span class="agreement-label">Acceptation<br></span>
+            </label>
+            <span class="agreement-more">J'ai lu, j'ai compris et j'accepte le règlement de participation. <a href="#" target="_blank">Lire les réglements</a></span>
+          </div>
+          <div class="main-form__agreement agreement-two">
+            <label>
+              <input type="checkbox" name="agreementTwo" class="check__checkbox">
+    				  <span class="agreement-checkbox"></span>
+						  <span class="agreement-label">Inspirez-moi !<br></span>
+            </label>
+            <span class="agreement-more">Je désire recevoir gratuitement des communications courriel incluant des offres promotionnelles et de l’information relative aux produits de voyages de Groupe Voyages Québec et de ses partenaires affiliés.</span>
+            <span class="agreement-more"><i>Il est possible de retirer son consentement à tout moment.</i></span>
+          </div>
+          <div class="main-form__control">
+            <p>Question mathématique : (100x4) + (100x2) - 50 =<input name="Control" type="text" maxlength="3"></p> 
+          </div>
+          <button class="main-form__button" id="button-submit" type="submit">PARTICIPER AU CONCOURS</button>
+          <div class="main-form__information">
+            <span>*Sur l’ensemble des produits offerts par GVQ.</span>
+            <span>Détails et règlements disponibles en succursale ou au <a href="#" target="_blank">gvq.ca/concours.</a></span>
+          </div>
+        </form>  
+      </div>
+    </section>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
