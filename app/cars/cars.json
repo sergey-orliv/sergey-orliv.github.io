@@ -1,0 +1,31 @@
+[
+  {
+    "brand": "BMW",
+    "model":  "7-series",
+    "fuel": "Benzine",
+    "color": "White",
+    "comments":"",
+    "price":  9.9
+  },{
+    "brand": "AUDI",
+    "model": "A6",
+    "fuel": "Diesel",
+    "color": "Yellow",
+    "comments":"good car",
+    "price": 1.5
+  },{
+    "brand": "Mercedes-Benz",
+    "model": "C-class",
+    "fuel": "Gas",
+    "color": "Green",
+    "comments":"the best car",
+    "price":  3.3
+  }, {
+    "brand": "Honda",
+    "model": "Accord",
+    "fuel": "Diesel",
+    "color": "Black",
+    "comments":"good car",
+    "price": 6.6
+  }
+]

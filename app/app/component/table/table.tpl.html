@@ -1,0 +1,39 @@
+<section class="section_list">
+  <table>
+    <thead>
+        <tr>
+          <td><span ng-click="ctrl.sortParamHandler('brand')">Brand<span ng-show="ctrl.showPointerBrand" ng-class="ctrl.sortPointer"></span></span></td>
+          <td><span ng-click="ctrl.sortParamHandler('model')">Model<span ng-show="ctrl.showPointerModel" ng-class="ctrl.sortPointer"></span></span></td>
+          <td><span ng-click="ctrl.sortParamHandler('fuel')">Fuel<span ng-show="ctrl.showPointerFuel" ng-class="ctrl.sortPointer"></span></span></td>
+          <td><span ng-click="ctrl.sortParamHandler('color')">Color<span ng-show="ctrl.showPointerColor" ng-class="ctrl.sortPointer"></span></span></td>
+          <td>comments</td>
+          <td><span ng-click="ctrl.sortParamHandler('price')">Price<span ng-show="ctrl.showPointerPrice" ng-class="ctrl.sortPointer"></span></span></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Search" ng-model="ctrl.searchParamBrand"></td>
+          <td><input type="text" placeholder="Search" ng-model="ctrl.searchParamModel"></td>
+          <td><input type="text" placeholder="Search" ng-model="ctrl.searchParamFuel"></td>
+          <td><input type="text" placeholder="Search" ng-model="ctrl.searchParamColor"></td>
+          <td></td>
+          <td><input type="text" placeholder="Search" ng-model="ctrl.searchParamPrice"></td>
+        </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="car in ctrl.cars | 
+       orderBy: ctrl.sortParam | 
+       filter:{brand: ctrl.searchParamBrand}| 
+       filter:{model: ctrl.searchParamModel}| 
+       filter:{fuel: ctrl.searchParamFuel}| 
+       filter:{color: ctrl.searchParamColor}| 
+       filter:{price: ctrl.searchParamPrice}" 
+       ng-dblclick="ctrl.rowClickHandler(car, $index)">
+        <td ng-bind="car.brand"></td>
+        <td ng-bind="car.model"></td>
+        <td ng-bind="car.fuel"></td>
+        <td ng-bind="car.color"></td>
+        <td ng-bind="car.comments"></td>  
+        <td ng-bind="car.price | currency"></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
